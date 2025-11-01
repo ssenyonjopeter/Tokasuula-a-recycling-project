@@ -1,0 +1,258 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root {
+    --color-primary: green; 
+    --color-secondary: Cyan; 
+    --color-dark: #343a40;
+    --color-light: whitesmoke;
+    --color-bg-light: #f8f9fa; 
+    --font-heading: 'Georgia', serif;
+
+}
+
+body {
+    background-color: var(--color-bg-light);
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+.site-header {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.site-branding {
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.site-branding h1 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem; 
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.site-branding .tagline {
+    font-size: 0.9rem;
+    color: whitesmoke; 
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav li a {
+    color: var(--color-light);
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a[aria-current="page"] {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+
+main.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 40px;
+}
+
+h2 {
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 5px; 
+    margin-bottom: 20px;
+}
+
+
+.contact-info, .social {
+    padding: 20px;
+    background-color: var(--color-light);
+    border-radius: 8px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.contact-info ul, .social ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.contact-info li ul { 
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.contact-info li ul a {
+    font-weight: 600;
+}
+
+
+.contact-form-section {
+    background-color: var(--color-light);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark);
+}
+
+.form-row input:not([type="checkbox"]), 
+.form-row textarea,
+.form-row select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid gainsboro;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-row input:focus, 
+.form-row textarea:focus,
+.form-row select:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); 
+}
+
+.checkbox-row label {
+    display: flex;
+    align-items: flex-start;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.checkbox-row input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px;
+    flex-shrink: 0; 
+}
+
+.btn {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-light);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: forestgreen; 
+    border-color: forestgreen;
+    color: var(--color-light);
+}
+
+.form-status {
+    padding: 15px;
+    background-color: lightgreen;
+    color: darkgreen; 
+    border: 1px solid lightseagreen;
+    border-radius: 0.25rem;
+    margin-top: 20px;
+}
+
+
+.site-footer {
+    background-color: var(--color-dark);
+    color: smoke gainsboro; 
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.site-footer a {
+    color: gainsboro;
+    margin: 0 5px;
+}
+
+.site-footer a:hover {
+    color: var(--color-primary);
+}
+
+
+@media (max-width: 992px) {
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .site-branding {
+        margin: 10px 0;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+    }
+
+    main.container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-section {
+        order: 1; 
+    }
+    .contact-info {
+        order: 2;
+    }
+    .social {
+        order: 3;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-branding h1 {
+        font-size: 1.25rem;
+    }
+
+    .main-nav li a {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .contact-form-section {
+        padding: 20px;
+    }
+}

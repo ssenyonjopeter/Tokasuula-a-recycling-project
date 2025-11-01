@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Tokasuula</title>
+  <meta name="description" content="Get in touch with Tokasuula — schedule pickups, ask about partnerships, find drop-off locations or join our community programs." />
+  <link rel="stylesheet" href="css/contact.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="home.html" aria-label="Waste to Wealth home" class="logo-link">
+        <img src="logo/toka logo.jpg" alt="Waste to Wealth logo" width="140" />
+      </a>
+
+      <div class="site-branding">
+        <h1>TOKASUULA A RECYCLING PROJECT</h1>
+        <p class="tagline">We turn waste into opportunity. Need help or want to partner with us? Drop a message below.</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact-info">
+      <h2 id="contact-heading">Contact Us</h2>
+      <p>If you'd like to book a pickup, request a quote, partner with us or learn about drop-off locations, choose one of the options below or send a quick message.</p>
+
+      <h3>Reach us directly</h3>
+      <li>
+        <ul>Email: <a href="mailto:info@tokasuula.org">info@tokasuula.org</a></ul>
+        <ul>Phone: <a href="tel:+256745990401">+256 745 990 401</a></ul>
+        <ul>Address: 5th Street, Nakawa, Kampala, Uganda</ul>
+        <ul>Hours: Mon–Fri 08:00–17:00</li>
+        <ul>WhatsApp: <a href="https://wa.me/256745990401" target="_blank" rel="noopener">Chat on WhatsApp</a></ul>
+        </li>
+    </section>
+
+    <section class="contact-form-section">
+      <h2 id="form-heading">Send us a message</h2>
+      <p>Tell us what you need — we usually reply within one business day.</p>
+
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" placeholder="+256 7xx xxx xxx" />
+        </div>
+
+        <div class="form-row">
+          <label for="inquiry">I'm contacting about</label>
+          <select id="inquiry" name="inquiry" required>
+            <option value="">Select one</option>
+            <option>Schedule pickup</option>
+            <option>Partnerships</option>
+            <option>Drop-off locations</option>
+            <option>Community program</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write a short message with any details we should know" required></textarea>
+        </div>
+
+        <div class="form-row checkbox-row">
+          <label>
+            <input type="checkbox" name="newsletter" />
+            Yes — send me occasional tips and updates (I can unsubscribe anytime). See our <a href="privacy.html">privacy policy</a>.
+          </label>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn">Send message</button>
+        </div>
+
+        <div id="form-status" role="status" aria-live="polite" class="form-status" hidden>
+          Thank you — we received your message and will be in touch soon.
+        </div>
+      </form>
+
+      <p class="note"><small>Note: form submission requires a backend or a Formspree ID. If you prefer immediate contact, use email, phone or WhatsApp above.</small></p>
+    </section>
+
+    <section class="social">
+      <h2 id="social-heading">Follow us</h2>
+      <p>Join our community for updates, behind-the-scenes and tips.</p>
+      <li>
+        <ul><a href="https://wa.me/256745990401" target="_blank" rel="noopener">WhatsApp</a></ul>
+        <ul><a href="https://instagram.com/tokasuula" target="_blank" rel="noopener">Instagram</a></ul>
+        <ul><a href="https://twitter.com/tokasuula" target="_blank" rel="noopener">X (Twitter)</a></ul>
+        </li>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© tokasuula — Building a circular future</p>
+      <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+    </div>
+  </form>
+</body>
+</html>

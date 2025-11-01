@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokasuula — Home (Bootstrap)</title>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: lightgray;
+        }
+        .site-logo .logo-placeholder {
+            transition: transform 0.3s ease;
+        }
+        .site-logo:hover .logo-placeholder {
+            transform: rotate(-5deg);
+        }
+    </style>
+</head>
+<body>
+    <header class="p-3 bg-white shadow-sm border-bottom sticky-top">
+        <div class="container d-flex justify-content-between align-items-center"></div>
+            <a href="home.html" aria-label="Tokasuula a recycling project home" class="site-logo text-decoration-none d-flex align-items-center">
+                <div class="logo-placeholder bg-success rounded-3 p-2 text-white fw-bold fs-4 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">T</div>
+                <div class="title h5 mb-0 text-dark d-none d-sm-block">TOKASUULA A RECYCLING PROJECT</div>
+                <div class="title h6 mb-0 text-dark d-block d-sm-none">TOKASUULA</div>
+            </a>
+            
+            <div class="contact-email text-end">
+                <small class="d-block text-muted">Email:</small>
+                <a href="mailto:info@tokasuula.org" class="text-decoration-none text-success fw-bold small">info@tokasuula.org</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row g-4 align-items-center">
+            
+            <div class="col-lg-7">
+                <div class=" shadow-lg rounded-4 overflow-hidden">
+                    
+            
+                    <div class="ratio ratio-16x9 bg-success-subtle d-flex align-items-center justify-content-center border border-5 border-success p-3" >
+                        <img src="images/88-waste-material (1).webp" alt="">
+                        <div class="text-center text-success p-4">
+                            <i class="bi bi-play-circle-fill" style="font-size: 4rem;"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <h1 class="display-5 fw-extrabold text-dark mb-3">Building a Greener Future</h1>
+                <div class="info lead text-secondary mb-4">
+                    <p>Discover how small changes can make a big impact. Join us in building a greener future.</p>
+                    <p class="mb-0 fw-medium">A world where nothing is wasted — resources are reused, jobs are created, and communities thrive.</p>
+                </div>
+                <a href="#learn-more" id="learn-more" class="btn btn-success btn-lg shadow-lg px-4 py-2 fw-bold text-uppercase rounded-pill">Learn More</a>
+            </div>
+        </div>
+
+        <div class="row my-5 text-center g-4">
+            <div class="col-12">
+                <h2 class="mb-4 text-dark-emphasis border-bottom pb-2">Our Mission in Action</h2>
+            </div>
+            
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="card shadow-lg border-0 h-100 rounded-4">
+
+                    <img src="images/wast.jpg" class="card-img-top img-fluid rounded-top-4" alt="Waste material placeholder">
+                    <div class="card-body">
+                        <p class="card-text text-muted mb-0">Diverse waste materials collected for processing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                 <div class="card shadow-lg border-0 h-100 rounded-4">
+                    <img src="images/bottle.jpeg" class="card-img-top img-fluid rounded-top-4" alt="Bottle placeholder">
+                    <div class="card-body">
+                        <p class="card-text text-muted mb-0">Plastic bottles ready to be turned into new resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+         <footer class="bg-dark text-white-50 p-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Tokasuula A Recycling Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    </section>
+</body>
+
+    
+   
+</html>
+
